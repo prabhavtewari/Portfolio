@@ -12,7 +12,9 @@
 
 <nav class="navbar fixed-top navbar-expand-md navbar-light " aria-label="">
     <div class="container d-flex align-items-end">
-
+      <a class="navbar-brand" href="#">
+        <img src="images/logo.png" alt="" width="40" height="40">
+      </a>
       <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbars4" aria-controls="navbars4" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -29,6 +31,9 @@
             <a class="nav-link">Projects</a>
           </li>
           <li class="nav-item">
+            <a class="nav-link">Films</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link">Contact</a>
           </li>
 
@@ -40,7 +45,7 @@
 <body>
     
 
-    <section class="herosection">
+    <section class="herosection bglime">
         <div class="container">
             <div class="row">
                 <div class="col-md-8 d-flex">
@@ -48,16 +53,14 @@
                     <div class="hey">
                     Hey! I'm Prabhav
                     </div>
-                    <div class="typed">                    
+                    <div class="hey1">                    
                     I'm  a Frontend Developer
-                    <!-- <span id="typed"></span> -->
                     </div>
-                    <button class="btn btngreen">Projects</button>
-                    <button class="btn btngreen">About Me</button>
+                    <button class="btn ctabtn grow">Projects</button>
+                    <button class="btn ctabtn grow">About Me</button>
                     </div>
                 </div>
                 <div class="col-md-4 imgcont">
-                    <!-- <img src="images/heroimg.png" class="heroimg"alt=""> -->
                     <img src="images/heroimg1.jpg" class="heroimg"alt="">
                 </div>
             </div>
@@ -65,30 +68,27 @@
 
     </section>
 
-    <section class="aboutsection" id="here">
-      <svg class="wave1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100"><path  stroke="null" id="svg_1" d="m0,90.72484l26.7,1.66959c26.6,1.7956 80.3,4.94576 133.3,-1.66959c53.3,-6.61535 107,-23.62626 160,-31.9112c53.3,-8.41095 107,-8.41095 160,-13.45122c53.3,-5.04027 107,-15.12081 160,-15.12081c53.3,0 107,10.08054 160,16.7904c53.3,6.83586 107,9.98603 160,10.08054c53.3,-0.09451 107,-3.24467 160,1.70109c53.3,5.13477 107,18.36548 160,21.83066c53.3,3.46518 107,-3.46518 133,-6.70986l27,-3.37068l0,-70.56376l-26.7,0c-26.6,0 -80.3,0 -133.3,0c-53.3,0 -107,0 -160,0c-53.3,0 -107,0 -160,0c-53.3,0 -107,0 -160,0c-53.3,0 -107,0 -160,0c-53.3,0 -107,0 -160,0c-53.3,0 -107,0 -160,0c-53.3,0 -107,0 -160,0c-53.3,0 -107,0 -133,0l-27,0l0,90.72484z" fill-opacity="1" fill="#e4e4e2"/></svg>
+    <section class="aboutsection bggrayblue" >
+      <svg class="wave1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100"><path  stroke="null" id="svg_1" d="m0,90.72484l26.7,1.66959c26.6,1.7956 80.3,4.94576 133.3,-1.66959c53.3,-6.61535 107,-23.62626 160,-31.9112c53.3,-8.41095 107,-8.41095 160,-13.45122c53.3,-5.04027 107,-15.12081 160,-15.12081c53.3,0 107,10.08054 160,16.7904c53.3,6.83586 107,9.98603 160,10.08054c53.3,-0.09451 107,-3.24467 160,1.70109c53.3,5.13477 107,18.36548 160,21.83066c53.3,3.46518 107,-3.46518 133,-6.70986l27,-3.37068l0,-70.56376l-26.7,0c-26.6,0 -80.3,0 -133.3,0c-53.3,0 -107,0 -160,0c-53.3,0 -107,0 -160,0c-53.3,0 -107,0 -160,0c-53.3,0 -107,0 -160,0c-53.3,0 -107,0 -160,0c-53.3,0 -107,0 -160,0c-53.3,0 -107,0 -160,0c-53.3,0 -107,0 -133,0l-27,0l0,90.72484z" fill-opacity="1" fill="#d0e67a"/></svg>
 
         <div class="container">
             <div class="row">
                 <div class="col-md-8 d-flex">
-                  <div class="wrap margintop">
-                    <h1>ABOUT ME</h1>
+                  <div>
+                    <h1 class="colorgreen">ABOUT ME</h1>
                         <div class="abouttxt d-flex"> 
-                            <!-- <span class="material-icons">auto_stories</span> -->
                             <img src="images/college.svg" class=""alt="" srcset="">
                             <div class="txt">
                              I'm a third year CS undergraduate with a keen interest in designing and developing web applications.
                              </div>
                         </div>
                         <div class="abouttxt d-flex">
-                            <!-- <span class="material-icons">laptop</span> -->
                             <img src="images/code.svg" class=""alt="" srcset="">
                             <div class="txt">
                             I'm passionate about frontend developement and aim to create clean and intuitive UI's
                             </div>
                         </div>
                         <div class="abouttxt d-flex">
-                            <!-- <span class="material-icons">theaters</span> -->
                             <img src="images/acting.svg" class=""alt="" srcset="">
                             <div class="txt">
                             I'm also the Assistant coordinator of KIIT Film Society. I love acting, I've acted in six shortfilms and a theatrical performance.
@@ -97,8 +97,8 @@
                       </div>
                 </div>
                 <div class="col-md-4 d-flex">
-                  <div class="wrap margintop">
-                    <h1>SKILLS</h1>
+                  <div>
+                    <h1 class="colorgreen">SKILLS</h1>
                     <div class="skillwrap">
                         <div class="skill">HTML/CSS</div>
                         <div class="skill">JavaScript</div>
@@ -120,20 +120,19 @@
 
     </section>
 
-    <section class="projectsection">
-      <svg class="wave2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100"><path stroke="null" id="svg_1" d="m0,58.8l26.7,-3.27688c26.6,-3.15438 80.3,-9.89188 133.3,-11.42313c53.3,-1.53125 107,1.53125 160,9.8c53.3,8.26875 107,21.13125 160,27.77688c53.3,6.52313 107,6.52313 160,4.9c53.3,-1.74563 107,-4.80813 160,-4.9c53.3,0.09188 107,3.15438 160,0c53.3,-3.27688 107,-13.07688 160,-11.45375c53.3,1.74563 107,14.60813 160,21.25375c53.3,6.52313 107,6.52313 133,6.52313l27,0l0,-98l-26.7,0c-26.6,0 -80.3,0 -133.3,0c-53.3,0 -107,0 -160,0c-53.3,0 -107,0 -160,0c-53.3,0 -107,0 -160,0c-53.3,0 -107,0 -160,0c-53.3,0 -107,0 -160,0c-53.3,0 -107,0 -160,0c-53.3,0 -107,0 -160,0c-53.3,0 -107,0 -133,0l-27,0l0,58.8z" fill="#000000"/></svg>
+    <section class="projectsection bglime">
+      <svg class="wave2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100"><path stroke="null" id="svg_1" d="m0,58.8l26.7,-3.27688c26.6,-3.15438 80.3,-9.89188 133.3,-11.42313c53.3,-1.53125 107,1.53125 160,9.8c53.3,8.26875 107,21.13125 160,27.77688c53.3,6.52313 107,6.52313 160,4.9c53.3,-1.74563 107,-4.80813 160,-4.9c53.3,0.09188 107,3.15438 160,0c53.3,-3.27688 107,-13.07688 160,-11.45375c53.3,1.74563 107,14.60813 160,21.25375c53.3,6.52313 107,6.52313 133,6.52313l27,0l0,-98l-26.7,0c-26.6,0 -80.3,0 -133.3,0c-53.3,0 -107,0 -160,0c-53.3,0 -107,0 -160,0c-53.3,0 -107,0 -160,0c-53.3,0 -107,0 -160,0c-53.3,0 -107,0 -160,0c-53.3,0 -107,0 -160,0c-53.3,0 -107,0 -160,0c-53.3,0 -107,0 -133,0l-27,0l0,58.8z" fill="#2F4858"/></svg>
       <div class="container">
         <h1 class="sectionhead pb-30">PROJECTS</h1>
         <div class="row">
           <div class="col-md-4 ">
-            <div class="card grow h-100">
+            <div class="card grow h-100 ">
               <a href="http://www.quillhotels.com" target="_blank">
               <div class="card-body">
                 <img src="images/quill.jpg" class="card-img-top jpg1" alt="...">
                 <img src="images/quill.png" class="card-img-top png1" alt="...">
                 <h5 class="card-title">QUILL</h5>
                 <p class="card-text">Designed and developed the front end of the website for Quill Resdence, Candolim, Goa </p>
-                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
               </div>
             </a>
             </div>
@@ -146,7 +145,6 @@
                 <img src="images/sportify.png" class="card-img-top png2" alt="...">
                 <h5 class="card-title">Sportify</h5>
                 <p class="card-text">Sportify is a web application that aims to connect athletes, sports enthusiasts or people just trying to find a casual game. </p>
-                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
               </div>
               </a>
             </div>
@@ -159,7 +157,6 @@
                 <img src="images/ecomm.png" class="card-img-top png3" alt="...">
                 <h5 class="card-title">Responsive Ecommerce Website</h5>
                 <p class="card-text">Design for an ecommerce website</p>
-                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
               </div>
               </a>
             </div>
@@ -178,10 +175,10 @@
       <div class="container">
         <h1 class="sectionhead colorgreen">FILM</h1>
         <!-- <div class="moviecard container"> -->
-          <div id="carouselControls" class="carousel slide" data-bs-ride="carousel">
+          <!-- <div id="carouselControls" class="carousel slide"  data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <div class="carouselslide d-flex">
+                <div class="carouselslide d-flex h-100">
                   <div class="cimgwrap"><img src="images/whatyousee.jpg" class="d-block " alt="..."></div>
                   <div class="ctextwrap">
                     <h2 class="chead">
@@ -191,15 +188,13 @@
                      <p>Is this a Murder Mystery? A Psychological Thriller? A Dark Comedy, a really bad teen drama or a story of a writer filled with, jealousy, hatred and a sprinkle of self-awareness?</p>
                      <p>A deep dive into everything story and how we come up with it - well, it is pretty dramatized, for, you know, dramatic effect, this film tries to make his maker meet his characters. Or this is whatever you think this might be. Who knows. Who cares.</p>
 
-                     <button class="btn btngreen mbtn grow">View On Youtube</button>
+                     <button class="btn ctabtn  grow">View On Youtube</button>
                     </div>
                   </div>
-
-                
               </div>
               </div>
               <div class="carousel-item">
-                <div class="carouselslide d-flex">
+                <div class="carouselslide d-flex h-100">
                   <div class="cimgwrap"><img src="images/lastdoze.jpg" class="d-block " alt="..."></div>
                   <div class="ctextwrap">
                     <h2 class="chead">
@@ -208,113 +203,108 @@
                     <div class="cinfo">
                         <p>Sometimes what we do is far from reality. An ode to the dark side of our personalities that hides a shade of sin within. "The Last Doze "personifies how instances of the past can deeply affect your present if not curbed in time.</p>
 
-                        <button class="btn btngreen mbtn grow">View On Youtube</button>
+                        <button class="btn ctabtn mbtn grow">View On Youtube</button>
                     </div>
                   </div>
-
-                
               </div>
               </div>
               <div class="carousel-item">
-                <div class="carouselslide d-flex">
+                <div class="carouselslide d-flex h-100">
                   <div class="cimgwrap"><img src="images/kfslogo.png" class="d-block " alt="..."></div>
                   <div class="ctextwrap">
                     <h2 class="chead">
                       KFS
                     </h2>
                     <div class="cinfo">
-                        <p>KIIT Film Society is the college's official film society. I have been a memeber of of KFS for more than two years now. The society has allowed me to grow as an actor and also a person.</p>
+                        <p>KIIT Film Society is the college's official film society. I have been a memeber of KFS for more than two years now. The society has allowed me to grow as an actor and also a person.</p>
 
-                        <button class="btn btngreen mbtn grow">Know More</button>
+                        <button class="btn ctabtn mbtn grow">Know More</button>
                     </div>
                   </div>
-
-                
               </div>
               </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselControls" data-bs-slide="prev">
-              <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
               <span class="material-icons arr">
                 arrow_back_ios_new
                 </span>
               <span class="visually-hidden">Previous</span>
             </button>
             <button class="carousel-control-next" type="button" data-bs-target="#carouselControls" data-bs-slide="next">
-              <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
               <span class="material-icons arr">
                 arrow_forward_ios_new
                 </span>
               <span class="visually-hidden">Next</span>
             </button>
-          </div>
-          <!-- <div class="movieposter">
-
-          </div>
-          <div class="movieinfo">
-            
           </div> -->
-        <!-- </div> -->
+          <div class="mrow">
+            <div class="mposter noborder "><img src="images/whatyousee.jpg" class="" alt="..."></div>
+            <div class="mtext">
+              <h2 class="colorgreen">WHAT YOU SEE IN THE DARK</h2>
+              <p>Is this a Murder Mystery? A Psychological Thriller? A Dark Comedy, a really bad teen drama or a story of a writer filled with, jealousy, hatred and a sprinkle of self-awareness?</p>
+              <button class="btn ctabtn grow">Watch Now</button>
+            </div>
+          </div>
+          <div class="mrow">
+            <div class="mposter"><img src="images/lastdoze.jpg" class=" " alt="..."></div>
+            <div class="mtext">
+              <h2 class="colorgreen">The Last Doze</h2>
+              <p>Sometimes what we do is far from reality. An ode to the dark side of our personalities that hides a shade of sin within.</p>
+              <button class="btn ctabtn grow">Watch Now</button>
+            </div>
+          </div>
+          <div class="mrow">
+            <div class="mposter"><img src="images/kfslogo.png" class=" " alt="..."></div>
+            <div class="mtext">
+              <h2 class="colorgreen">KIIT Film Society</h2>
+              <p>KIIT Film Society is the college's official film society. I have been a memeber of KFS for more than two years now. The society has allowed me to grow as an actor and also a person.</p>
+              <button class="btn ctabtn grow">Know More</button>
+            </div>
+          </div>
       </div>
     </section>
 
-    <section class="contactsection">
-        <svg class="wave4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100"><path stroke="null" id="svg_1" d="m0,58.8l26.7,-3.27688c26.6,-3.15438 80.3,-9.89188 133.3,-11.42313c53.3,-1.53125 107,1.53125 160,9.8c53.3,8.26875 107,21.13125 160,27.77688c53.3,6.52313 107,6.52313 160,4.9c53.3,-1.74563 107,-4.80813 160,-4.9c53.3,0.09188 107,3.15438 160,0c53.3,-3.27688 107,-13.07688 160,-11.45375c53.3,1.74563 107,14.60813 160,21.25375c53.3,6.52313 107,6.52313 133,6.52313l27,0l0,-98l-26.7,0c-26.6,0 -80.3,0 -133.3,0c-53.3,0 -107,0 -160,0c-53.3,0 -107,0 -160,0c-53.3,0 -107,0 -160,0c-53.3,0 -107,0 -160,0c-53.3,0 -107,0 -160,0c-53.3,0 -107,0 -160,0c-53.3,0 -107,0 -160,0c-53.3,0 -107,0 -133,0l-27,0l0,58.8z" fill="#000000"/></svg>
+    <section class="contactsection bglime">
+        <svg class="wave4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100"><path stroke="null" id="svg_1" d="m0,58.8l26.7,-3.27688c26.6,-3.15438 80.3,-9.89188 133.3,-11.42313c53.3,-1.53125 107,1.53125 160,9.8c53.3,8.26875 107,21.13125 160,27.77688c53.3,6.52313 107,6.52313 160,4.9c53.3,-1.74563 107,-4.80813 160,-4.9c53.3,0.09188 107,3.15438 160,0c53.3,-3.27688 107,-13.07688 160,-11.45375c53.3,1.74563 107,14.60813 160,21.25375c53.3,6.52313 107,6.52313 133,6.52313l27,0l0,-98l-26.7,0c-26.6,0 -80.3,0 -133.3,0c-53.3,0 -107,0 -160,0c-53.3,0 -107,0 -160,0c-53.3,0 -107,0 -160,0c-53.3,0 -107,0 -160,0c-53.3,0 -107,0 -160,0c-53.3,0 -107,0 -160,0c-53.3,0 -107,0 -160,0c-53.3,0 -107,0 -133,0l-27,0l0,58.8z" fill="#2F4858"/></svg>
         <div class="container">
-          <h1 class="sectionhead pb-30"> CONTACT</h1>
+          <h1 class="sectionhead  pb-30"> CONTACT</h1>
           <div class="row justify-content-center">
             <div class="col-md-8">
 
-              <form id="cform" action="submit">
-                <input class="form-control" type="text" placeholder="Name">
-                <input class="form-control" type="email" placeholder="Email">
-                <textarea class="form-control" name="message" id="" placeholder="Meassage" rows=3"></textarea>
-                <button class="btn btngreen">Submit</button>
+              <form id="cform" >
+                <input class="form-control" name="Name" id="name" type="text" placeholder="Name" required>
+                <input class="form-control" name="Email" id="email" type="email" placeholder="Email" required>
+                <textarea class="form-control" name="Message" id="message" placeholder="Message" rows="3" required></textarea>
+                <button class="btn ctabtn grow">Submit</button>
               </form>
 
             </div>
  
           </div>
           <div class="row socialrow justify-content-center">
-            <a href="https://getbootstrap.com/docs/5.0/utilities/flex/#direction"><img src="images/envelope-solid.svg" alt="" class="socials grow"srcset=""></a>
-            <a href="https://getbootstrap.com/docs/5.0/utilities/flex/#direction"><img src="images/github-brands.svg" alt="" class="socials grow"srcset=""></a>
-            <a href="https://getbootstrap.com/docs/5.0/utilities/flex/#direction"><img src="images/linkedin-brands.svg" alt="" class="socials grow"srcset=""></a>
-            <a href="https://getbootstrap.com/docs/5.0/utilities/flex/#direction"><img src="images/instagram-brands.svg" alt="" class="socials grow"srcset=""></a>
+            <a href="mailto:1905331@kiit.ac.in" target="_blank"><img src="images/envelope-solid.svg" alt="" class="socials grow"srcset=""></a>
+            <a href="https://github.com/prabhavtewari" target="_blank"><img src="images/github-brands.svg" alt="" class="socials grow"srcset=""></a>
+            <a href="https://www.linkedin.com/in/prabhav-tewari/" target="_blank"><img src="images/linkedin-brands.svg" alt="" class="socials grow"srcset=""></a>
+            <a href="https://www.instagram.com/prabhavtewari/" target="_blank"><img src="images/instagram-brands.svg" alt="" class="socials grow"srcset=""></a>
             </div>
           </div>
 
     </section>
 
-    <!-- <svg id="blob1" viewBox="0 0 900 600" width="900" height="600" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"><g transform="translate(438.91443524122286 273.8763658250436)"><path d="M111.1 -147.8C156.6 -143.6 214.7 -134.1 243.9 -102.1C273 -70 273.1 -15.4 262.8 35.9C252.4 87.1 231.6 134.9 197.7 167.8C163.8 200.8 116.7 218.9 72 220.9C27.3 222.9 -14.9 208.8 -59.7 198.1C-104.4 187.3 -151.6 179.7 -180.1 152.8C-208.7 125.8 -218.7 79.3 -230.6 30.1C-242.5 -19.2 -256.3 -71.3 -237.9 -107.3C-219.4 -143.4 -168.6 -163.4 -123.6 -167.8C-78.6 -172.3 -39.3 -161.1 -3.2 -156.1C32.8 -151 65.6 -152.1 111.1 -147.8" fill="#d0e67a"></path></g></svg> -->
-    <!-- <svg id="blob2" viewBox="0 0 900 600" width="900" height="600" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"><g transform="translate(441.4509827854557 258.7104211238018)"><path d="M158.3 -141.4C205.8 -110.8 245.4 -55.4 238 -7.4C230.5 40.5 176.1 81.1 128.6 131.1C81.1 181.1 40.5 240.5 -12.1 252.7C-64.8 264.8 -129.6 229.6 -171.3 179.6C-213 129.6 -231.5 64.8 -216.8 14.7C-202 -35.4 -154 -70.7 -112.4 -101.4C-70.7 -132 -35.4 -158 10 -168C55.4 -178.1 110.8 -172.1 158.3 -141.4" fill="#000000"></path></g></svg> -->
-
+    <!-- <div class="modal fade" id="mymodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <h3 class="modal-title">Merci !</h3>
+          </div>
+        </div>
+      </div>
+    </div> -->
     <script src="scripts/bootstrap.js"></script>
-    <!-- <script src="scripts/typed.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="scripts/mail.js"></script>
     <script>
 
-        var typed = new Typed('#typed',{
-                    strings: ["a Frontend Developer","an Actor","a CS Undergraduate"],
-                    backSpeed:40,
-                    typeSpeed:60,
-                    // loop:true
-                  });
-    </script> -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/kute.js@2.1.2/dist/kute.min.js"></script>
-    <script>
-const tween = KUTE.fromTo(
-    '#w1a',
-    { path: '#w1a' },
-    { path: '#w1b' },
-    { repeat: 999, duration: 3000, yoyo: true }
-    ).start();
-    </script> -->
-    <!-- <script src="./scripts/wave.js"></script>
-    <script>
-      var wave = new Wave('#here'),
-      var wave = new Wave('section')
-      wave.animate()
-    
-    </script> -->
-
+    </script>
 </body>
 </html>
