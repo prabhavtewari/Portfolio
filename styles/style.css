@@ -35,6 +35,28 @@ nav
     text-decoration: underline;
 
 }
+
+/* LOADING */
+.loadingwrap
+{
+    position: fixed;
+    top: 0;
+    left:0;
+    height: 100vh;
+    width: 100vw;
+    z-index: 15;
+    background-color: #d0e67a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.loadingwrap img{
+    height: 100px;
+    width: 100px;
+}
+
 /* HERO */
 
 
@@ -42,6 +64,7 @@ nav
 {
     overflow-y: hidden;
     font-family: 'Prompt', sans-serif;
+    text-decoration: none!important;
 }
 
 .filmsection
@@ -59,7 +82,7 @@ nav
 {
     display: flex;
     justify-content: center;
-    padding-top: 70px;
+    padding-top: 90px;
     
 }
 .heroimg
@@ -67,6 +90,18 @@ nav
     height: max(400px,50vh);
     border-radius: 600px 400px 600px 400px;
     margin: auto;
+}
+
+.nostyle
+{
+    color: inherit;
+    text-decoration: inherit;
+    border: none;
+}
+.nostyle:hover
+{
+    color: inherit;
+    text-decoration: inherit;
 }
 .ctabtn
 {
@@ -80,8 +115,13 @@ color: #27465e;
 margin-top: 10px!important;
 font-weight: 400;
 }
-.cta:hover{
+.ctabtn:hover{
     outline: 0ch;
+
+}
+.ctabtn:active{
+    outline: 0ch;
+    background-color: #e4e4e2!important;
 
 }
 
@@ -200,6 +240,9 @@ font-weight: 400;
 .grow:hover
 {
      transform: scale(1.03);
+}
+.grow:active{
+    transform: scale(0.95);
 }
 .card-title
 {
@@ -364,6 +407,7 @@ margin-right: auto;
 .socialrow a
 {
     width: 4em;
+    padding: 0;
 }
 .socials
 {

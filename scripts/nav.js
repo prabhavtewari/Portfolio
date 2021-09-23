@@ -6,6 +6,8 @@ const navLi=document.querySelectorAll('.navbar-nav li');
 // console.log(document.documentElement.scrollHeight)
 // console.log(document.documentElement.offsetHeight)
 // console.log("---------")
+document.getElementById("heros").classList.add("active")
+// console.log(navLi);
 window.addEventListener('scroll',()=>{
 
 let current='';

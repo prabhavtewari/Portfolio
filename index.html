@@ -57,8 +57,8 @@
                     <div class="hey1">                    
                     I'm  a Frontend Developer
                     </div>
-                    <button class="btn ctabtn grow">Projects</button>
-                    <button class="btn ctabtn grow">About Me</button>
+                    <a href="#projects" class="nostyle"><button class="btn ctabtn herocta grow" onclick="">  Projects</button></a>
+                    <a href="#abouts" class="nostyle"> <button class="btn ctabtn herocta grow">  About Me</button></a>
                     </div>
                 </div>
                 <div class="col-md-4 imgcont">
@@ -243,7 +243,7 @@
             <div class="mtext">
               <h2 class="colorgreen">WHAT YOU SEE IN THE DARK</h2>
               <p>Is this a Murder Mystery? A Psychological Thriller? A Dark Comedy, a really bad teen drama or a story of a writer filled with, jealousy, hatred and a sprinkle of self-awareness?</p>
-              <button class="btn ctabtn grow">Watch Now</button>
+              <a href="https://youtu.be/3HllsTotKqE" target="_blank"><button class="btn ctabtn grow">Watch Now</button></a>
             </div>
           </div>
           <div class="mrow">
@@ -251,7 +251,7 @@
             <div class="mtext">
               <h2 class="colorgreen">The Last Doze</h2>
               <p>Sometimes what we do is far from reality. An ode to the dark side of our personalities that hides a shade of sin within.</p>
-              <button class="btn ctabtn grow">Watch Now</button>
+              <a href="https://youtu.be/vp4JGuez3cU" target="_blank"><button class="btn ctabtn grow">Watch Now</button></a> 
             </div>
           </div>
           <div class="mrow">
@@ -259,7 +259,7 @@
             <div class="mtext">
               <h2 class="colorgreen">KIIT Film Society</h2>
               <p>KIIT Film Society is the college's official film society. I have been a memeber of KFS for more than two years now. The society has allowed me to grow as an actor and also a person.</p>
-              <button class="btn ctabtn grow">Know More</button>
+              <a href="https://ksac.kiit.ac.in/societies/kiit-film-society/" target="_blank"><button class="btn ctabtn grow">Know More</button></a>
             </div>
           </div>
       </div>
@@ -301,12 +301,39 @@
         </div>
       </div>
     </div> -->
+    <div class="loadingwrap">
+      <img src="images/load2.gif" alt="" srcset="">
+    </div>
+
     <script src="scripts/bootstrap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>
+    <script src="scripts/animations.js"></script>  
     <script src="scripts/nav.js"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="scripts/mail.js"></script>
+
     <script>
 
+        var imgs = document.images,
+            len = imgs.length,
+            counter = 0;
+
+        [].forEach.call( imgs, function( img ) {
+            if(img.complete)
+              incrementCounter();
+            else
+              img.addEventListener( 'load', incrementCounter, false );
+        } );
+
+        function incrementCounter() {
+            counter++;
+            if ( counter === len ) {
+                // await sleep(2000);
+                // time.sleep(.300)
+                document.querySelector('.loadingwrap').style.display='none';
+            }
+        }
     </script>
 </body>
 </html>
