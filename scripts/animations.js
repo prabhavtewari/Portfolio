@@ -28,7 +28,7 @@ gsap.to(".heroimg", {
   gsap.from(".animate2",{scrollTrigger:{
     trigger:".animate2",
     start:"bottom bottom",
-  },opacity:0,y:40,ease:"sine",scale:0.9,duration:0.5,stagger:0.2});
+  },opacity:0,y:40,ease:"bounce",scale:0.9,duration:0.5,stagger:0.2});
 
 
   gsap.from("#animate3",{scrollTrigger:{
@@ -43,6 +43,11 @@ gsap.to(".heroimg", {
     toggleActions:"play none none none"
   },opacity:0,y:40,ease:"slow",scale:0.8,duration:0.8});
 
+  gsap.from("#animate5",{scrollTrigger:{
+    trigger:"#animate5",
+    start:"bottom bottom",
+    toggleActions:"play none none none"
+  },opacity:0,y:40,ease:"slow",scale:0.8,duration:0.8});
   gsap.from("#animate5",{scrollTrigger:{
     trigger:"#animate5",
     start:"bottom bottom",
