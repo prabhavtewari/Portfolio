@@ -1,9 +1,8 @@
-
+window.onload = function() {
 gsap.timeline()
-// .from(".heroimg",{opactiy:0,duration:3,ease:"slow"})
-.from(".hey",{opacity:0,y:5,duration:0.5,ease:"slow"})
-.from(".hey1",{opacity:0,y:5,duration:0.5,ease:"slow"})
-.from(".herocta",{opacity:0,y:5,duration:0.5,ease:"slow"})
+.from(".hey",{opacity:0,y:40,ease:"back",scale:0.8,duration:0.8})
+.from(".hey1",{opacity:0,y:40,ease:"back",scale:0.8,duration:0.8})
+.from(".herocta",{opacity:0,y:40,ease:"back",scale:0.7,duration:0.4})
 
 
 
@@ -19,3 +18,36 @@ gsap.to(".heroimg", {
         toggleActions: "play pause play pause"
     }
   });
+
+  gsap.from("#animate1",{scrollTrigger:{
+    trigger:"#animate1",
+    start:"bottom bottom",
+    toggleActions:"play none none none"
+  },opacity:0,y:40,ease:"slow",scale:0.8,duration:0.8});
+  
+  gsap.from(".animate2",{scrollTrigger:{
+    trigger:".animate2",
+    start:"bottom bottom",
+  },opacity:0,y:40,ease:"sine",scale:0.9,duration:0.5,stagger:0.2});
+
+
+  gsap.from("#animate3",{scrollTrigger:{
+    trigger:"#animate3",
+    start:"bottom bottom",
+    toggleActions:"play none none none"
+  },opacity:0,y:40,ease:"slow",scale:0.8,duration:0.8});
+
+  gsap.from("#animate4",{scrollTrigger:{
+    trigger:"#animate4",
+    start:"bottom bottom",
+    toggleActions:"play none none none"
+  },opacity:0,y:40,ease:"slow",scale:0.8,duration:0.8});
+
+  gsap.from("#animate5",{scrollTrigger:{
+    trigger:"#animate5",
+    start:"bottom bottom",
+    toggleActions:"play none none none"
+  },opacity:0,y:40,ease:"slow",scale:0.8,duration:0.8});
+
+ 
+}
