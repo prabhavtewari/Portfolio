@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <title>Prabhav Tewari</title>
+    <meta name="google-site-verification" content="ZCvGtcyBoRbgy5iDp49qqqzPX1_ms4n7OiTInyyno8I" />
 </head>
 
 <nav class="navbar fixed-top navbar-expand-md navbar-light " aria-label="">
@@ -317,12 +318,9 @@
     <script src="scripts/bootstrap.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>
-    <script src="scripts/animations.js"></script>
-    <script src="scripts/nav.js"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script src="scripts/mail.js"></script>
-
     <script>
+        // LOADING
         var imgs = document.images,
             len = imgs.length,
             counter = 0;
@@ -337,10 +335,179 @@
         function incrementCounter() {
             counter++;
             if (counter === len) {
-                // await sleep(2000);
-                // time.sleep(.300)
                 document.querySelector('.loadingwrap').style.display = 'none';
             }
+        }
+        // NAVBAR
+        const sections = document.querySelectorAll("section");
+        const navLi = document.querySelectorAll('.navbar-nav li');
+
+        document.querySelector(".home").classList.add("active")
+
+        window.addEventListener('scroll', () => {
+            document.querySelector(".home").classList.remove("active")
+            let current = '';
+            sections.forEach(section => {
+
+                const sectionTop = section.offsetTop;
+                if (scrollY + 100 > sectionTop) {
+                    current = section.getAttribute("id");
+
+                }
+            });
+            navLi.forEach((li) => {
+                li.classList.remove("active");
+                if (li.classList.contains(current)) {
+                    li.classList.add("active");
+                }
+            });
+
+        });
+        // ANIMATION
+        window.onload = function() {
+                gsap.timeline()
+                    .from(".hey", {
+                        opacity: 0,
+                        y: 40,
+                        ease: "back",
+                        scale: 0.8,
+                        duration: 0.8
+                    })
+                    .from(".hey1", {
+                        opacity: 0,
+                        y: 40,
+                        ease: "back",
+                        scale: 0.8,
+                        duration: 0.8
+                    })
+                    .from(".herocta", {
+                        opacity: 0,
+                        y: 40,
+                        ease: "back",
+                        scale: 0.7,
+                        duration: 0.4
+                    })
+
+
+
+                gsap.to(".heroimg", {
+                    duration: 3,
+                    y: -10,
+                    repeat: -1,
+                    yoyo: true,
+                    ease: "sine.inOut",
+                    scrollTrigger: {
+                        trigger: "#heros",
+                        start: "top bottom",
+                        toggleActions: "play pause play pause"
+                    }
+                });
+
+                gsap.from("#animate1", {
+                    scrollTrigger: {
+                        trigger: "#animate1",
+                        start: "bottom bottom",
+                        toggleActions: "play none none none"
+                    },
+                    opacity: 0,
+                    y: 40,
+                    ease: "slow",
+                    scale: 0.8,
+                    duration: 0.8
+                });
+
+                gsap.from(".animate2", {
+                    scrollTrigger: {
+                        trigger: ".animate2",
+                        start: "top center",
+                        toggleActions: "play none none none"
+                    },
+                    opacity: 0,
+                    y: 40,
+                    ease: "slow",
+                    scale: 0.8,
+                    duration: 0.8,
+                });
+
+
+                gsap.from("#animate3", {
+                    scrollTrigger: {
+                        trigger: "#animate3",
+                        start: "bottom bottom",
+                        toggleActions: "play none none none"
+                    },
+                    opacity: 0,
+                    y: 40,
+                    ease: "slow",
+                    scale: 0.8,
+                    duration: 0.8
+                });
+
+                gsap.from("#animate4", {
+                    scrollTrigger: {
+                        trigger: "#animate4",
+                        start: "bottom bottom",
+                        toggleActions: "play none none none"
+                    },
+                    opacity: 0,
+                    y: 40,
+                    ease: "slow",
+                    scale: 0.8,
+                    duration: 0.8
+                });
+
+                gsap.from("#animate5", {
+                    scrollTrigger: {
+                        trigger: "#animate5",
+                        start: "bottom bottom",
+                        toggleActions: "play none none none"
+                    },
+                    opacity: 0,
+                    y: 40,
+                    ease: "slow",
+                    scale: 0.8,
+                    duration: 0.8
+                });
+                gsap.from("#animate6", {
+                    scrollTrigger: {
+                        trigger: "#animate6",
+                        start: "top center",
+                        toggleActions: "play none none none"
+                    },
+                    opacity: 0,
+                    y: 40,
+                    ease: "slow",
+                    scale: 0.8,
+                    duration: 0.8
+                });
+
+
+            }
+            // MAIL
+        var form = document.getElementById('cform');
+        form.addEventListener('submit', function submit1(e) {
+            e.preventDefault()
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var message = document.getElementById("message").value;
+            document.getElementById("name").value = " ";
+            document.getElementById("email").value = " ";
+            document.getElementById("message").value = " ";
+            window.scrollTo(0, 0);
+            sendEmail(name, email, message);
+        });
+
+        function sendEmail(name, email, message) {
+            Email.send({
+                Host: "smtp.gmail.com",
+                Username: 'prabhavtewari@gmail.com',
+                Password: "nkmlyapdhsyyslom",
+                To: '1905331@kiit.ac.in',
+                From: 'prabhavtewari@gmail.com',
+                Subject: `-Portfolio Message form ${name}`,
+                Body: `Name: ${name}<br>Email: ${email}<br>Message: ${message}`
+
+            }).then((message) => alert("Message Sent"))
         }
     </script>
 

@@ -9,7 +9,6 @@ window.addEventListener('scroll', () => {
     sections.forEach(section => {
 
         const sectionTop = section.offsetTop;
-        // const sectionHeight = section.offsetTop;
         if (scrollY + 100 > sectionTop) {
             current = section.getAttribute("id");
 
