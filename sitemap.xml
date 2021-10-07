@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<urlset xmlns="http://www.google.com/schemas/sitemap/0.84" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+		<url>
+			<loc>http://prabhavtewari.github.io</loc>
+			<changefreq>weekly</changefreq>
+		</url>
+
+		<url>
+			<loc>http://prabhavtewari.github.io/#heros</loc>
+			<changefreq>weekly</changefreq>
+		</url>
+
+		<url>
+			<loc>http://prabhavtewari.github.io/#abouts</loc>
+			<changefreq>weekly</changefreq>
+		</url>
+
+		<url>
+			<loc>http://prabhavtewari.github.io/#projects</loc>
+			<changefreq>weekly</changefreq>
+		</url>
+
+		<url>
+			<loc>http://prabhavtewari.github.io/#actings</loc>
+			<changefreq>weekly</changefreq>
+		</url>
+
+		<url>
+			<loc>http://prabhavtewari.github.io/#contacts</loc>
+			<changefreq>weekly</changefreq>
+		</url>
+
+		<url>
+			<loc>http://prabhavtewari.github.io/mailto:1905331@kiit.ac.in</loc>
+			<changefreq>weekly</changefreq>
+		</url>
+
+	</urlset>
+
