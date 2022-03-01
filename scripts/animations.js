@@ -87,7 +87,7 @@ window.onload = function() {
     gsap.from("#animate6", {
         scrollTrigger: {
             trigger: "#animate6",
-            start: "top center",
+            start: "top bottom",
             toggleActions: "play none none none"
         },
         opacity: 0,
