@@ -1,5 +1,3 @@
-// 
-
 var form = document.getElementById('cform');
 form.addEventListener('submit', function submit1(e) {
     e.preventDefault()
