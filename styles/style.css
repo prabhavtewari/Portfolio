@@ -222,7 +222,7 @@ nav {
     z-index: 1;
     outline: 0;
     border-color: #2F4858;
-    background-color: #00000000;
+    background-color: #c4dd5e;
     text-align: center;
 }
 
@@ -267,35 +267,19 @@ nav {
     font-weight: 200;
 }
 
-.jpg1,
-.jpg2,
-.jpg3 {
+.bright {
     display: none;
 }
 
-.grow:hover .png1 {
+.card:hover .dull {
     display: none;
 }
 
-.grow:hover .jpg1 {
+.card:hover .bright {
     display: block;
 }
 
-.grow:hover .png2 {
-    display: none;
-}
 
-.grow:hover .jpg2 {
-    display: block;
-}
-
-.grow:hover .png3 {
-    display: none;
-}
-
-.grow:hover .jpg3 {
-    display: block;
-}
 
 
 /* ACTING */
@@ -304,7 +288,7 @@ nav {
     margin-top: -5px;
 }
 
-.actingsection {
+.expsection {
     background-color: #2F4858;
 }
 
@@ -616,4 +600,26 @@ html::-webkit-scrollbar-thumb {
     border-radius: 25px;
     outline: #000000;
     border: 2px solid black;
+}
+
+/* Update */
+
+.card-tags{
+    text-align: left;
+    padding: 15px;
+}
+.card-tag{
+    background-color: #e4e4e2;
+    display: inline-block;
+    padding: 5px 7px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    border: black 1px solid;
+    font-weight: 200;
+    font-size: 1em;
+}
+
+
+.text-justify{
+    text-align: justify;
 }
