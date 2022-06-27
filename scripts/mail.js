@@ -15,7 +15,7 @@ function sendEmail(name, email, message) {
     Email.send({
         Host: "smtp.gmail.com",
         Username: 'prabhavtewari@gmail.com',
-        Password: "nkmlyapdhsyyslom",
+        Password: "jrdpzqdvubajxnvd",
         To: '1905331@kiit.ac.in',
         From: 'prabhavtewari@gmail.com',
         Subject: `-Portfolio Message form ${name}`,
